@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A7FDD11EEAD30B0018888E /* MGBSHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */; };
+		24A7FDD21EEAD30B0018888E /* MGBSHudBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */; };
 		24FC5F941EEA9997000D7976 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F931EEA9997000D7976 /* main.m */; };
 		24FC5F971EEA9997000D7976 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F961EEA9997000D7976 /* AppDelegate.m */; };
 		24FC5F9A1EEA9997000D7976 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F991EEA9997000D7976 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGBSHud.framework; sourceTree = "<group>"; };
+		24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGBSHudBundle.bundle; sourceTree = "<group>"; };
 		24FC5F8F1EEA9997000D7976 /* MGBSHudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGBSHudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FC5F931EEA9997000D7976 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24FC5F951EEA9997000D7976 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A7FDD11EEAD30B0018888E /* MGBSHud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 		24FC5F911EEA9997000D7976 /* MGBSHudTest */ = {
 			isa = PBXGroup;
 			children = (
+				24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */,
+				24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */,
 				24FC5F951EEA9997000D7976 /* AppDelegate.h */,
 				24FC5F961EEA9997000D7976 /* AppDelegate.m */,
 				24FC5F981EEA9997000D7976 /* ViewController.h */,
@@ -110,6 +117,7 @@
 				TargetAttributes = {
 					24FC5F8E1EEA9997000D7976 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QF55445249;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A7FDD21EEAD30B0018888E /* MGBSHudBundle.bundle in Resources */,
 				24FC5FA21EEA9997000D7976 /* LaunchScreen.storyboard in Resources */,
 				24FC5F9F1EEA9997000D7976 /* Assets.xcassets in Resources */,
 				24FC5F9D1EEA9997000D7976 /* Main.storyboard in Resources */,
@@ -272,7 +281,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QF55445249;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGBSHudTest",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MGBSHudTest/MGBSHud.framework";
 				INFOPLIST_FILE = MGBSHudTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megabes.framework.MGBSHudTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QF55445249;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGBSHudTest",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MGBSHudTest/MGBSHud.framework";
 				INFOPLIST_FILE = MGBSHudTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megabes.framework.MGBSHudTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +332,7 @@
 				24FC5FA81EEA9997000D7976 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

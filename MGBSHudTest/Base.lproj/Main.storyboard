@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-LR-NrZ">
+                                <rect key="frame" x="25" y="45" width="325" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="MGBSHud_1_单独文字"/>
+                                <connections>
+                                    <action selector="clickMGBSHudOnlyText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieZ-I5-0zr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00n-RC-nmB">
+                                <rect key="frame" x="25" y="90" width="325" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="MGBSHud_2_文字和图形"/>
+                                <connections>
+                                    <action selector="clickImgAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Of-fV-j3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-d3-4S8">
+                                <rect key="frame" x="25" y="128" width="325" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="MGBSHud_3_Squre"/>
+                                <connections>
+                                    <action selector="clickSqure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFm-3C-KsB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj3-tB-2j8">
+                                <rect key="frame" x="25" y="166" width="325" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="MGBSHud_4_Squre_NODismiss"/>
+                                <connections>
+                                    <action selector="clickNoDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YZ-oQ-BxI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx4-8k-OWJ">
+                                <rect key="frame" x="25" y="204" width="325" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="MGBSHud_5_HUD_Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klJ-WZ-QOT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dp7-d3-4S8" firstAttribute="trailing" secondItem="aj3-tB-2j8" secondAttribute="trailing" id="1kM-SA-qEi"/>
+                            <constraint firstItem="aj3-tB-2j8" firstAttribute="top" secondItem="Dp7-d3-4S8" secondAttribute="bottom" constant="8" symbolic="YES" id="6OB-CX-UzS"/>
+                            <constraint firstItem="Kx4-8k-OWJ" firstAttribute="top" secondItem="aj3-tB-2j8" secondAttribute="bottom" constant="8" symbolic="YES" id="7T7-TM-JKe"/>
+                            <constraint firstItem="Kx4-8k-OWJ" firstAttribute="trailing" secondItem="aj3-tB-2j8" secondAttribute="trailing" id="9s7-c7-NAy"/>
+                            <constraint firstItem="wLs-LR-NrZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="GdM-fT-esG"/>
+                            <constraint firstItem="Dp7-d3-4S8" firstAttribute="trailing" secondItem="00n-RC-nmB" secondAttribute="trailing" id="Hxx-fd-0ER"/>
+                            <constraint firstItem="Dp7-d3-4S8" firstAttribute="top" secondItem="00n-RC-nmB" secondAttribute="bottom" constant="8" symbolic="YES" id="JlB-9I-eR7"/>
+                            <constraint firstItem="00n-RC-nmB" firstAttribute="height" secondItem="wLs-LR-NrZ" secondAttribute="height" id="LpA-Dp-P6Z"/>
+                            <constraint firstItem="Kx4-8k-OWJ" firstAttribute="leading" secondItem="aj3-tB-2j8" secondAttribute="leading" id="MWS-If-edz"/>
+                            <constraint firstItem="Dp7-d3-4S8" firstAttribute="leading" secondItem="00n-RC-nmB" secondAttribute="leading" id="NiM-Qj-yNJ"/>
+                            <constraint firstItem="wLs-LR-NrZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="SA3-2R-0RD"/>
+                            <constraint firstItem="00n-RC-nmB" firstAttribute="top" secondItem="wLs-LR-NrZ" secondAttribute="bottom" constant="15" id="f6T-bZ-saT"/>
+                            <constraint firstItem="00n-RC-nmB" firstAttribute="width" secondItem="wLs-LR-NrZ" secondAttribute="width" id="jjf-lv-JPW"/>
+                            <constraint firstItem="00n-RC-nmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9W-Hy-RHj"/>
+                            <constraint firstItem="Dp7-d3-4S8" firstAttribute="leading" secondItem="aj3-tB-2j8" secondAttribute="leading" id="rfc-i2-ZP4"/>
+                            <constraint firstAttribute="trailing" secondItem="wLs-LR-NrZ" secondAttribute="trailing" constant="25" id="xCr-JS-9oq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

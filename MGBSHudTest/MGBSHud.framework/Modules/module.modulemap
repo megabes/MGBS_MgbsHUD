@@ -1,0 +1,6 @@
+framework module MGBSHud {
+  umbrella header "MGBSHud.h"
+
+  export *
+  module * { export * }
+}
