@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243C071C1EF10A4A006F5FD0 /* testLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 243C071B1EF10A4A006F5FD0 /* testLogo.png */; };
 		24E80CFE1EF1034100C6B796 /* MGBSHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E80CFD1EF1034100C6B796 /* MGBSHud.framework */; };
 		24E80D001EF1036000C6B796 /* MGBSHudBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24E80CFF1EF1036000C6B796 /* MGBSHudBundle.bundle */; };
 		24FC5F941EEA9997000D7976 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F931EEA9997000D7976 /* main.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243C071B1EF10A4A006F5FD0 /* testLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testLogo.png; sourceTree = "<group>"; };
 		24E80CFD1EF1034100C6B796 /* MGBSHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGBSHud.framework; sourceTree = "<group>"; };
 		24E80CFF1EF1036000C6B796 /* MGBSHudBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGBSHudBundle.bundle; sourceTree = "<group>"; };
 		24FC5F8F1EEA9997000D7976 /* MGBSHudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGBSHudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 		24FC5F911EEA9997000D7976 /* MGBSHudTest */ = {
 			isa = PBXGroup;
 			children = (
+				243C071B1EF10A4A006F5FD0 /* testLogo.png */,
 				24FC5F951EEA9997000D7976 /* AppDelegate.h */,
 				24FC5F961EEA9997000D7976 /* AppDelegate.m */,
 				24FC5F981EEA9997000D7976 /* ViewController.h */,
@@ -154,6 +157,7 @@
 			files = (
 				24E80D001EF1036000C6B796 /* MGBSHudBundle.bundle in Resources */,
 				24FC5FA21EEA9997000D7976 /* LaunchScreen.storyboard in Resources */,
+				243C071C1EF10A4A006F5FD0 /* testLogo.png in Resources */,
 				24FC5F9F1EEA9997000D7976 /* Assets.xcassets in Resources */,
 				24FC5F9D1EEA9997000D7976 /* Main.storyboard in Resources */,
 			);

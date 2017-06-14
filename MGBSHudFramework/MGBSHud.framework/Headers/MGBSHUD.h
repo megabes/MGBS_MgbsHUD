@@ -1,15 +1,15 @@
 //
-//  MGBSHUD.h
-//  MGBSUtils
+//  AppDelegate.h
+//  MGBSHudTest
 //
-//  Created by megabes_wanweiwei on 2017/5/24.
-//  Copyright © 2017年 wanweiwei. All rights reserved.
+//  Created by megabes inc. on 2017/6/9.
+//  Copyright © 2017年 megabes inc. All rights reserved.
 //
+//  WebSite : http://www.megabes.com/
+//  E-mail  : megabes@126.com
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-
 
 // backgroundStyle : Dark, Blur
 typedef NS_ENUM (NSInteger, MGBSHUDBackgourdStyle){
@@ -25,8 +25,8 @@ typedef NS_ENUM (NSInteger, MGBSHUDPosition){
 
 // MGBSHUDPopstyle : fade, transform
 typedef NS_ENUM (NSInteger, MGBSHUDPopstyle){
-    MGBSHUDPopstyleNormal = 0,
-    MGBSHUDPopstyleTransform
+    MGBSHUDPopstyleNormal = 0, // 淡入淡出
+    MGBSHUDPopstyleTransform   // 变形动画
 };
 
 // MGBSHUDImgtype
@@ -35,7 +35,7 @@ typedef NS_ENUM (NSInteger, MGBSHUDImgtype){
     MGBSHUDImgtypeSuccess,
     MGBSHUDImgtypeFail,
     MGBSHUDImgtypeWarning,
-    MGBSHUDImgtypeCustom
+    MGBSHUDImgtypeCustom // 可以定制自己的IMG
 };
 
 @interface MGBSHUD : NSObject
@@ -60,6 +60,7 @@ typedef NS_ENUM (NSInteger, MGBSHUDImgtype){
  * position :
  * popstyle : animation style
  * imgType :
+ * ifCircleColor : 可以定制转圈的颜色
  */
 +(void)showImgText:(NSString*)text fontSize:(CGFloat)size uiEnabled:(bool)uiEnabled delay:(NSTimeInterval)delay backgroudStyle:(MGBSHUDBackgourdStyle)backgroundStyle position:(MGBSHUDPosition)position popstyle:(MGBSHUDPopstyle)popStyle imgType:(MGBSHUDImgtype)imgType ifCircleColor:(UIColor*)circleColor ifCustomImg:(UIImage*)img identifier:(NSString*)identifier;
 
