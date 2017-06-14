@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+void test();
+
 @interface ViewController : UIViewController
 
-
 @end
+
+
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+void test();
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
