@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24636FFC1EEC32B500E44172 /* MGBSSearchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 24636FFB1EEC32B500E44172 /* MGBSSearchTool.m */; };
-		24A7FDD11EEAD30B0018888E /* MGBSHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */; };
-		24A7FDD21EEAD30B0018888E /* MGBSHudBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */; };
+		24E80CFE1EF1034100C6B796 /* MGBSHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E80CFD1EF1034100C6B796 /* MGBSHud.framework */; };
+		24E80D001EF1036000C6B796 /* MGBSHudBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24E80CFF1EF1036000C6B796 /* MGBSHudBundle.bundle */; };
 		24FC5F941EEA9997000D7976 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F931EEA9997000D7976 /* main.m */; };
 		24FC5F971EEA9997000D7976 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F961EEA9997000D7976 /* AppDelegate.m */; };
 		24FC5F9A1EEA9997000D7976 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F991EEA9997000D7976 /* ViewController.m */; };
@@ -19,11 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24636FF61EEC325500E44172 /* MGBSSearchPriceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBSSearchPriceProtocol.h; sourceTree = "<group>"; };
-		24636FFA1EEC32B500E44172 /* MGBSSearchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBSSearchTool.h; sourceTree = "<group>"; };
-		24636FFB1EEC32B500E44172 /* MGBSSearchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGBSSearchTool.m; sourceTree = "<group>"; };
-		24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGBSHud.framework; sourceTree = "<group>"; };
-		24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGBSHudBundle.bundle; sourceTree = "<group>"; };
+		24E80CFD1EF1034100C6B796 /* MGBSHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGBSHud.framework; sourceTree = "<group>"; };
+		24E80CFF1EF1036000C6B796 /* MGBSHudBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGBSHudBundle.bundle; sourceTree = "<group>"; };
 		24FC5F8F1EEA9997000D7976 /* MGBSHudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGBSHudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FC5F931EEA9997000D7976 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24FC5F951EEA9997000D7976 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,26 +37,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A7FDD11EEAD30B0018888E /* MGBSHud.framework in Frameworks */,
+				24E80CFE1EF1034100C6B796 /* MGBSHud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24636FF51EEC31CE00E44172 /* TestProtocol */ = {
+		24E80CFC1EF1033B00C6B796 /* MGBSHudFramework */ = {
 			isa = PBXGroup;
 			children = (
-				24636FF61EEC325500E44172 /* MGBSSearchPriceProtocol.h */,
-				24636FFA1EEC32B500E44172 /* MGBSSearchTool.h */,
-				24636FFB1EEC32B500E44172 /* MGBSSearchTool.m */,
+				24E80CFF1EF1036000C6B796 /* MGBSHudBundle.bundle */,
+				24E80CFD1EF1034100C6B796 /* MGBSHud.framework */,
 			);
-			name = TestProtocol;
+			path = MGBSHudFramework;
 			sourceTree = "<group>";
 		};
 		24FC5F861EEA9997000D7976 = {
 			isa = PBXGroup;
 			children = (
+				24E80CFC1EF1033B00C6B796 /* MGBSHudFramework */,
 				24FC5F911EEA9997000D7976 /* MGBSHudTest */,
 				24FC5F901EEA9997000D7976 /* Products */,
 			);
@@ -77,9 +73,6 @@
 		24FC5F911EEA9997000D7976 /* MGBSHudTest */ = {
 			isa = PBXGroup;
 			children = (
-				24636FF51EEC31CE00E44172 /* TestProtocol */,
-				24A7FDCF1EEAD30B0018888E /* MGBSHud.framework */,
-				24A7FDD01EEAD30B0018888E /* MGBSHudBundle.bundle */,
 				24FC5F951EEA9997000D7976 /* AppDelegate.h */,
 				24FC5F961EEA9997000D7976 /* AppDelegate.m */,
 				24FC5F981EEA9997000D7976 /* ViewController.h */,
@@ -160,7 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A7FDD21EEAD30B0018888E /* MGBSHudBundle.bundle in Resources */,
+				24E80D001EF1036000C6B796 /* MGBSHudBundle.bundle in Resources */,
 				24FC5FA21EEA9997000D7976 /* LaunchScreen.storyboard in Resources */,
 				24FC5F9F1EEA9997000D7976 /* Assets.xcassets in Resources */,
 				24FC5F9D1EEA9997000D7976 /* Main.storyboard in Resources */,
@@ -174,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24636FFC1EEC32B500E44172 /* MGBSSearchTool.m in Sources */,
 				24FC5F9A1EEA9997000D7976 /* ViewController.m in Sources */,
 				24FC5F971EEA9997000D7976 /* AppDelegate.m in Sources */,
 				24FC5F941EEA9997000D7976 /* main.m in Sources */,
@@ -301,6 +293,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MGBSHudTest",
+					"$(PROJECT_DIR)/MGBSHudFramework",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MGBSHudTest/MGBSHud.framework";
 				INFOPLIST_FILE = MGBSHudTest/Info.plist;
@@ -319,6 +312,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MGBSHudTest",
+					"$(PROJECT_DIR)/MGBSHudFramework",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MGBSHudTest/MGBSHud.framework";
 				INFOPLIST_FILE = MGBSHudTest/Info.plist;
