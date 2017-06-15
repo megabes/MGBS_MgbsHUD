@@ -1,10 +1,7 @@
 # MGBSHUD
 MGBSHUD is a simple HUD display tool for iOS.
 
-![image](https://github.com/megabes/MGBSHUD/tree/master/MGBSHudTest/readMe.gif)
-
-
-<div align=center><img src="https://github.com/megabes/MGBSHUD/tree/master/MGBSHudTest/testLogo.png"/></div></br>
+<div align=center><img src="https://github.com/megabes/MGBSHUD/blob/master/MGBSHudTest/readMe.gif"/></div></br>
 
 MGBSHUD是一个简单的HUD指示层，随意定制，颜色，大小，位置都可一个单词定制
 
